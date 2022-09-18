@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            const div = document.createElement("div");
+            const divtxt = document.createElement("div");
+            const ul = document.createElement("ul");
+            const item_1 = document.createElement("li");
+            const item_2 = document.createElement("li");
+            const item_3 = document.createElement("li");
+            const link1 = document.createElement("a");
+            const link2 = document.createElement("a");
+            const link3 = document.createElement("a");
+            ul.append(item_1, item_2, item_3);
+            div.append(divtxt, ul);
+            item_1.append(link1);
+            item_2.append(link2);
+            item_3.append(link3);
+            document.body.prepend(div);
+            divtxt.textContent =
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed accumsan lacus, at porttitor felis. Ut volutpat hendrerit lacinia. Suspendisse accumsan ex id tellus posuere, id semper magna varius. ";
+            div.style.boxSizing = "border-box";
+            document.body.style.width = "100%";
+            div.style.width = "30%";
+            div.style.margin = "auto";
+            divtxt.style.borderRadius = "10%";
+            divtxt.style.border = "px";
+            divtxt.style.border = "solid red";
+            divtxt.style.padding = "5px";
+            ul.style.display = "flex";
+            ul.style.justifyContent = "space-between";
+            ul.style.listStyleType = "none";
+            ul.style.padding = "0px";
+            divtxt.style.boxShadow = '0.5px 1px 1px'
+            divtxt.style.boxShadow = 'rgb(215 212 212)'
+            link1.href = "http://google.ru";
+            link1.title = "google";
+            link1.append(document.createTextNode("google"));
+            link1.target = "_blank";
+            link2.href = "http://intocode.ru";
+            link2.title = "intocode";
+            link2.append(document.createTextNode("intocode"));
+            link2.target = "_blank";
+            link3.href = "http://instagram.com";
+            link3.title = "instagram";
+            link3.append(document.createTextNode("instagram"));
+            link3.target = "_blank";
+        </script>
+    </body>
+</html>
